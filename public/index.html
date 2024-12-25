@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our First React page</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+   
+</head>
+<body>
+    
+    <div id="content"></div>
+    <script src="employees.js"> </script>
+  
+  
+  
+  <!--
+  let cenia = 'Cenia Ayala'
+    let zenia = 'Zenia Ayala'
+    let xenia= 'Xenia Ayala'
+    let senia = 'Senia Ayala'
+    const element = (
+            <ul style={{'color': 'purple', 'font-size':'24px'}}>
+                <li>{cenia}</li>
+                <li>{zenia}</li>
+                <li>{xenia}</li>
+                <li>{senia.toUpperCase()}</li>
+
+            </ul> 
+        )     
+    ReactDOM.render(element, document.getElementById('content'))
+    
+</script>
+
+const element = (
+    <ul style={{'color': 'pink', 'font-size':'24px'}}>
+        <li>Cenia Ayala</li>
+        <li>Zenia Ayala</li>
+        <li>Xenia Ayala</li>
+
+    </ul> 
+)     
+ReactDOM.render(element, document.getElementById('content'))
+
+const element = React.createElement(
+    'ul', 
+    {style: {'Color': 'pink', 'font-size': '24px'}}, 
+    React.createElement('li', null, 'Cenia Ayala'), 
+    React.createElement('li', null, 'Zenia Ayala'),
+    React.createElement('li', null, 'Xenia Ayala'),
+)
+ReactDOM.render(element, document.getElementById('content'))
+
+const element = React.createElement(
+    'div', 
+    {title: 'Outer div'}, 
+    React.createElement('h1', null, 'Hello World')
+)
+ReactDOM.render(element, document.getElementById('content'))
+
+//ReactDOM.render(
+       // React.createElement(
+          //  'div', 
+          //  {title: 'Outer div'}, 
+          //  'Hello World!'
+      //  ),
+       // document.getElementById('content')
+  //  )
+    
+-->
+</body>
+</html>
